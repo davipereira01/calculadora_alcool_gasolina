@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de vantagem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Modal -->
+<div class="modal fade" id="modalGas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">É mais vantajoso abastecer com gasolina</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Abasteça com gasolina para economizar!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btnModal" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btnModal" id="refreshGas" data-dismiss="modal">Calcular Novamente</buttonCalcular novamente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalAlc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">É mais vantajoso abastecer com Alcool</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Abasteça com Alcool para economizar!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btnModal" id data-dismiss="modal">Fechar</button>
+          <button   type="button" class="btnModal" id='refreshAlc'>Calcular novamente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+    <div class="title">
+        <h1>Calculador de vantagem</h1>
+        <h2>Álcool X Gasolina</h2>
+    </div>
+    
+
+
+
+    
+
+
+    <div class="contentSection">
+
+        <img id="bannerImg" src="img/mellow-vegetable-fuel.png" alt="">
+
+
+        <div class="calculatorContent">
+
+            
+
+        <section>
+
+            <p>A relação de consumo entre álcool e gasolina é de 70%, ou seja, se temos o mesmo
+                volume de combustível, a energia gerada por 70% do consumo de gasolina é o
+                mesmo de 100% do consumo de álcool. </p>
+    
+                <p style="margin-top:20px">Descubra abaixo qual combustivel é mais vantajoso na hora de abastecer</p>
+    
+    
+            </section>
+    
+    
+        <div class="contentBox">
+    
+    
+            <div class="legenda">
+    
+                <p>Alcool (Preço por litro)</p>
+            <p>Gasolina (Preço por litro)</p>
+    
+    
+            </div>
+    
+            
+               
+            
+          
+    
+            
+    
+           
+    
+    
+            <div class="boxContainer">
+                <input value="R$0,00" class='inputValue' id='alc' type="text" placeholder="Preço por litro">
+                <input value="R$0,00" class='inputValue' id='gas' type="text" placeholder="Preço por litro">
+            </div>
+        
+            <div class="btnContainer">
+    
+                
+                <button class="btn" onclick="calcVantagem()" id='btnCalc' >Calcular vantagem</button>
+                
+                <div class="btnBorder">
+    
+                    
+    
+    
+                </div>
+    
+    
+        
+                
+            </div>
+        
+        
+        
+            
+        
+    
+            
+    
+    
+    
+        </div>
+
+
+
+        </div>
+
+        
+    
+    
+        
+    
+        
+    
+    
+    
+        
+    </div>
+
+    
+    
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
