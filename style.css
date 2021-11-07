@@ -102,9 +102,10 @@ body {
     border: none;
     position: absolute;
     z-index: 1000;
-    margin-top: 0px;
+    margin-top: -5px;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    border-radius: 0;
 }
 
 #btnCalc:hover {
@@ -115,7 +116,7 @@ body {
 
 .btnBorder {
     width: 11rem;
-    height: 4.5rem;
+    height: 4.3rem;
     border: solid 1px black;
     position: relative;
     background-color: black;

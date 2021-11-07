@@ -20,41 +20,27 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">É mais vantajoso abastecer com gasolina</h5>
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          Abasteça com gasolina para economizar!
+         <p class="recommendation"></p>
+          <p class='info'></p>
+          <p>• Se este valor for superior a 0,7, vale a pena a gasolina. <br>
+            • Se este valor for inferior a 0,7, vale a pena o álcool. <br>
+            • Se o valor for exatamente 0,7, tanto faz abastecer com um ou outro.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btnModal" data-dismiss="modal">Fechar</button>
-          <button type="button" class="btnModal" id="refreshGas" data-dismiss="modal">Calcular Novamente</buttonCalcular novamente</button>
+          <button type="button" class="btnModal" id="refreshPage" data-dismiss="modal">Calcular Novamente</buttonCalcular novamente</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="modalAlc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">É mais vantajoso abastecer com Alcool</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Abasteça com Alcool para economizar!
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btnModal" id data-dismiss="modal">Fechar</button>
-          <button   type="button" class="btnModal" id='refreshAlc'>Calcular novamente</button>
-        </div>
-      </div>
-    </div>
-  </div>
+ 
     
 
     <div class="title">
@@ -118,7 +104,7 @@
             <div class="btnContainer">
     
                 
-                <button class="btn" onclick="calcVantagem()" id='btnCalc' >Calcular vantagem</button>
+                <button class="btn" id='btnCalc' >Calcular vantagem</button>
                 
                 <div class="btnBorder">
     
